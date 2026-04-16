@@ -27,3 +27,89 @@
     <section class="info">
         <p>🔥 Promo Hari Ini: Diskon 20%!</p>
     </section>
+    <!-- MAIN -->
+    <main>
+
+        <!-- MENU MAKANAN -->
+        <section class="menu">
+            <h2>Menu Makanan</h2>
+
+            <div class="card">
+                <h3>Nasi Goreng</h3>
+                <p>Rp 15.000</p>
+                <button onclick="pesan()">Pesan</button>
+            </div>
+
+            <div class="card">
+                <h3>Mie Ayam</h3>
+                <p>Rp 12.000</p>
+                <button onclick="pesan()">Pesan</button>
+            </div>
+        </section>
+
+        <!-- MENU MINUMAN -->
+        <section class="menu">
+            <h2>Menu Minuman</h2>
+
+            <div class="card">
+                <h3>Es Teh</h3>
+                <p>Rp 5.000</p>
+                <button onclick="pesan()">Pesan</button>
+            </div>
+
+            <div class="card">
+                <h3>Kopi Hitam</h3>
+                <p>Rp 8.000</p>
+                <button onclick="pesan()">Pesan</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>📍 Jl. Contoh No.1</p>
+        <p>📞 08123456789</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Pesanan Berhasil!</h2>
+            <p>Terima kasih sudah memesan 😊</p>
+            <button onclick="tutupModal()">Tutup</button>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast">
+        Pesanan berhasil ditambahkan!
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function pesan() {
+            bukaModal();
+            showToast();
+        }
+
+        function bukaModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function tutupModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function showToast() {
+            let toast = document.getElementById("toast");
+            toast.classList.add("show");
+
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+    </script>
+
+</body>
+</html>
