@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Login</title>
 
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 50px auto;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 90px;
+        }
+
+        input {
+            padding: 5px;
+            width: 200px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+
+        #hasil {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="input-group">
+        <label>Username</label>
+        <input type="text" id="us">
+    </div>
+
+    <div class="input-group">
+        <label>Sandi</label>
+        <input type="password" id="ps">
+    </div>
+
+    <button id="btnLogin">Login</button>
+    <button id="btnCancel">Cancel</button>
+
+    <p id="hasil"></p>
+
+</div>
+
+<script>
+    const btnLogin = document.getElementById("btnLogin");
+    const btnCancel = document.getElementById("btnCancel");
+    const hasil = document.getElementById("hasil");
+
+    // Login → SELALU tampil "Username"
+    btnLogin.addEventListener("click", function () {
+        hasil.innerHTML = "Username";
+    });
+
+    // Cancel → reset
+    btnCancel.addEventListener("click", function () {
+        document.getElementById("us").value = "";
+        document.getElementById("ps").value = "";
+        hasil.innerHTML = "";
+    });
+</script>
+
+</body>
+</html>
