@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Cafe Berlian Saputra</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
+<main class="container">
 
-    <!-- HEADER -->
-    <header>
-        <h1>Cafe Berlian Saputra</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Kontak</a>
-        </nav>
-    </header>
+    <!-- KIRI: MENU -->
+    <section class="menu-area">
+        <h2>Menu Pilihan</h2>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Selamat Datang di Cafe Kami</h2>
-        <p>Nikmati makanan dan minuman terbaik</p>
-    </section>
-
-    <!-- INFO -->
-    <section class="info">
-        <p>🔥 Promo Hari Ini: Diskon 20%!</p>
-    </section>
-    <!-- MAIN -->
-    <main>
-
-        <!-- MENU MAKANAN -->
-        <section class="menu">
-            <h2>Menu Makanan</h2>
+        <div class="menu-grid">
 
             <div class="card">
                 <h3>Nasi Goreng</h3>
@@ -45,11 +17,6 @@
                 <p>Rp 12.000</p>
                 <button onclick="pesan()">Pesan</button>
             </div>
-        </section>
-
-        <!-- MENU MINUMAN -->
-        <section class="menu">
-            <h2>Menu Minuman</h2>
 
             <div class="card">
                 <h3>Es Teh</h3>
@@ -62,54 +29,23 @@
                 <p>Rp 8.000</p>
                 <button onclick="pesan()">Pesan</button>
             </div>
-        </section>
 
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>📍 Jl. Contoh No.1</p>
-        <p>📞 08123456789</p>
-    </footer>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <h2>Pesanan Berhasil!</h2>
-            <p>Terima kasih sudah memesan 😊</p>
-            <button onclick="tutupModal()">Tutup</button>
         </div>
-    </div>
+    </section>
 
-    <!-- TOAST -->
-    <div id="toast" class="toast">
-        Pesanan berhasil ditambahkan!
-    </div>
+    <!-- KANAN: PANEL UI -->
+    <aside class="sidebar">
+        <h2>Detail Pesanan</h2>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        function pesan() {
-            bukaModal();
-            showToast();
-        }
+        <div class="box">
+            <p>🛒 Belum ada pesanan</p>
+        </div>
 
-        function bukaModal() {
-            document.getElementById("modal").style.display = "flex";
-        }
+        <div class="box">
+            <p>Total: Rp 0</p>
+        </div>
 
-        function tutupModal() {
-            document.getElementById("modal").style.display = "none";
-        }
+        <button class="checkout">Checkout</button>
+    </aside>
 
-        function showToast() {
-            let toast = document.getElementById("toast");
-            toast.classList.add("show");
-
-            setTimeout(() => {
-                toast.classList.remove("show");
-            }, 3000);
-        }
-    </script>
-
-</body>
-</html>
+</main>
