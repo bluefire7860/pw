@@ -1,127 +1,136 @@
 /* RESET */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
 }
 
 /* HEADER */
 header {
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #ecf0f1;
     margin: 10px;
     text-decoration: none;
 }
 
 /* HERO */
 .hero {
-    background-color: #34495e;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 60px;
 }
 
 /* INFO */
 .info {
-    background-color: #e74c3c;
+    background: #e74c3c;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    font-weight: bold;
 }
 
-/* ========================= */
-/* CONTAINER */
-/* ========================= */
+/* MAIN */
 .container {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
-/* ========================= */
-/* MENU AREA */
-/* ========================= */
-.menu-area {
-    flex: 3;
-}
-
-/* GRID MENU */
+/* GRID */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 /* CARD */
 .card {
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* BUTTON */
 button {
-    padding: 8px 12px;
-    background-color: #2ecc71;
+    padding: 10px 14px;
+    background: #27ae60;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
-/* ========================= */
-/* SIDEBAR */
-/* ========================= */
-.sidebar {
-    flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    height: fit-content;
+button:hover {
+    background: #219150;
 }
 
-/* BOX */
-.box {
+/* FLOATING CART */
+.floating-cart {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 280px;
+
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    z-index: 999;
+}
+
+.floating-cart h3 {
+    margin-top: 0;
+}
+
+.cart-content {
     background: #ecf0f1;
     padding: 10px;
+    border-radius: 6px;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
 
-/* CHECKOUT BUTTON */
+.cart-total {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .checkout {
     width: 100%;
-    padding: 10px;
-    background-color: #e67e22;
+    background: #e67e22;
+}
+
+.checkout:hover {
+    background: #ca6b1c;
 }
 
 /* FOOTER */
 footer {
-    background-color: #2c3e50;
+    background: #2c3e50;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
-/* ========================= */
 /* MODAL */
-/* ========================= */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
 
     justify-content: center;
     align-items: center;
@@ -129,51 +138,41 @@ footer {
 
 .modal-content {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
 }
 
-/* ========================= */
 /* TOAST */
-/* ========================= */
 .toast {
     visibility: hidden;
     position: fixed;
-    z-index: 2000;
     bottom: 20px;
-    right: 20px;
-    background-color: #2ecc71;
+    left: 20px;
+    background: #2ecc71;
     color: white;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 6px;
 }
 
-/* ANIMATION */
 .toast.show {
     visibility: visible;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr;
+    .floating-cart {
+        width: 90%;
+        right: 5%;
     }
 }
