@@ -3,119 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <title>Cafe Berlian Saputra</title>
-
-    <!-- FIX PATH -->
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-<header>
-    <h1>Cafe Berlian Saputra</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Kontak</a>
-    </nav>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>Cafe Berlian Saputra</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h2>Selamat Datang di Cafe Kami</h2>
-    <p>Nikmati makanan dan minuman terbaik</p>
-</section>
-
-<section class="info">
-    🔥 Promo Hari Ini: Diskon 20%!
-</section>
-
-<main class="container">
-
-    <section class="menu-area">
-        <h2>Menu Pilihan</h2>
-
-        <div class="menu-grid">
-
-            <div class="card">
-                <h3>Nasi Goreng</h3>
-                <p>Rp 15.000</p>
-                <button onclick="pesan()">Pesan</button>
-            </div>
-
-            <div class="card">
-                <h3>Mie Ayam</h3>
-                <p>Rp 12.000</p>
-                <button onclick="pesan()">Pesan</button>
-            </div>
-
-            <div class="card">
-                <h3>Es Teh</h3>
-                <p>Rp 5.000</p>
-                <button onclick="pesan()">Pesan</button>
-            </div>
-
-            <div class="card">
-                <h3>Kopi Hitam</h3>
-                <p>Rp 8.000</p>
-                <button onclick="pesan()">Pesan</button>
-            </div>
-
-        </div>
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Selamat Datang di Cafe Kami</h2>
+        <p>Nikmati makanan dan minuman terbaik</p>
     </section>
 
-    <aside class="sidebar">
-        <h2>Detail Pesanan</h2>
+    <!-- INFO -->
+    <section class="info">
+        <p>🔥 Promo Hari Ini: Diskon 20%!</p>
+    </section>
 
-        <div class="box">
-            🛒 Belum ada pesanan
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- KIRI (MENU) -->
+        <section class="menu-area">
+            <h2>Menu Pilihan</h2>
+
+            <div class="menu-grid">
+
+                <div class="card">
+                    <h3>Nasi Goreng</h3>
+                    <p>Rp 15.000</p>
+                    <button onclick="pesan()">Pesan</button>
+                </div>
+
+                <div class="card">
+                    <h3>Mie Ayam</h3>
+                    <p>Rp 12.000</p>
+                    <button onclick="pesan()">Pesan</button>
+                </div>
+
+                <div class="card">
+                    <h3>Es Teh</h3>
+                    <p>Rp 5.000</p>
+                    <button onclick="pesan()">Pesan</button>
+                </div>
+
+                <div class="card">
+                    <h3>Kopi Hitam</h3>
+                    <p>Rp 8.000</p>
+                    <button onclick="pesan()">Pesan</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KANAN (SIDEBAR) -->
+        <aside class="sidebar">
+            <h2>Detail Pesanan</h2>
+
+            <div class="box">
+                <p>🛒 Belum ada pesanan</p>
+            </div>
+
+            <div class="box">
+                <p>Total: Rp 0</p>
+            </div>
+
+            <button class="checkout">Checkout</button>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>📍 Jl. Contoh No.1</p>
+        <p>📞 08123456789</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Pesanan Berhasil!</h2>
+            <p>Terima kasih sudah memesan 😊</p>
+            <button onclick="tutupModal()">Tutup</button>
         </div>
-
-        <div class="box">
-            Total: Rp 0
-        </div>
-
-        <button class="checkout">Checkout</button>
-    </aside>
-
-</main>
-
-<footer>
-    <p>📍 Jl. Contoh No.1</p>
-    <p>📞 08123456789</p>
-</footer>
-
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <h2>Pesanan Berhasil!</h2>
-        <button onclick="tutupModal()">Tutup</button>
     </div>
-</div>
 
-<div id="toast" class="toast">
-    Pesanan berhasil ditambahkan!
-</div>
+    <!-- TOAST -->
+    <div id="toast" class="toast">
+        Pesanan berhasil ditambahkan!
+    </div>
 
-<script>
-function pesan() {
-    bukaModal();
-    showToast();
-}
+    <!-- JAVASCRIPT -->
+    <script>
+        function pesan() {
+            bukaModal();
+            showToast();
+        }
 
-function bukaModal() {
-    document.getElementById("modal").style.display = "flex";
-}
+        function bukaModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
 
-function tutupModal() {
-    document.getElementById("modal").style.display = "none";
-}
+        function tutupModal() {
+            document.getElementById("modal").style.display = "none";
+        }
 
-function showToast() {
-    let toast = document.getElementById("toast");
-    toast.classList.add("show");
+        function showToast() {
+            let toast = document.getElementById("toast");
+            toast.classList.add("show");
 
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 3000);
-}
-</script>
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+    </script>
 
 </body>
 </html>
