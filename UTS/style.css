@@ -165,13 +165,6 @@ section {
     font-size: 1.1em;
 }
 
-.custom-logo{
-    width:32px;
-    height:32px;
-    object-fit:cover;
-    border-radius:50%;
-}
-
 /* Header & Navigation */
 header {
     position: fixed;
@@ -206,6 +199,14 @@ header.scrolled {
     color: var(--primary-color);
     text-decoration: none;
     z-index: 1001;
+}
+
+.custom-logo{
+    width: 35px ;
+    height: 35px ;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .logo-icon {
