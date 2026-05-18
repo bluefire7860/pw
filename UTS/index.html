@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Restoran Fine Dining Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-utensils logo-icon"></i>
+                <span>Gourmet Haven</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#features">Keunggulan</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chefs">Chef</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#reservation">Reservasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Pengalaman Kuliner Tak Terlupakan</h1>
+                <p class="fade-in">Di Gourmet Haven, kami menyajikan hidangan istimewa yang dibuat dengan bahan-bahan terbaik dan sentuhan kreatif dari chef ternama kami. Setiap hidangan adalah karya seni yang memanjakan lidah Anda.</p>
+                <div class="hero-btns fade-in">
+                    <a href="#menu" class="btn">
+                        <i class="fas fa-book-open"></i>
+                        Lihat Menu Lengkap
+                    </a>
+                    <a href="#reservation" class="btn btn-secondary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Reservasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Tentang Gourmet Haven</h2>
+                <p>Didirikan pada tahun 2010, kami telah menjadi destinasi kuliner premium dengan reputasi yang tak tertandingi di industri fine dining.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Kisah Kami</h3>
+                    <p>Gourmet Haven lahir dari passion mendalam terhadap seni kuliner. Chef Marco Alessandro, pendiri kami, membawa pengalaman lebih dari 20 tahun dari restoran bintang Michelin di Eropa.</p>
+                    <p>Setiap hidangan diolah dengan bahan-bahan segar pilihan yang dipasok langsung dari petani lokal terpercaya dan importir khusus. Kami mengutamakan kualitas, keberlanjutan, dan rasa autentik.</p>
+                    <p>Restoran kami telah menerima berbagai penghargaan prestisius termasuk "Best Fine Dining Restaurant 2023" dan "Golden Fork Award" selama tiga tahun berturut-turut.</p>
+                    <a href="#reservation" class="btn mt-2">
+                        <i class="fas fa-star"></i>
+                        Rasakan Keunggulan Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Keunggulan Kami</h2>
+                <p>Mengapa Gourmet Haven menjadi pilihan utama para pecinta kuliner</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Bahan Organik</h3>
+                    <p>Hanya menggunakan bahan organik segar dari petani lokal terpercaya untuk kualitas dan kesehatan terbaik.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Chef Berpengalaman</h3>
+                    <p>Dibimbing oleh Chef Marco Alessandro dengan pengalaman 20+ tahun di restoran bintang Michelin Eropa.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Wine Collection</h3>
+                    <p>Koleksi wine eksklusif dari berbagai daerah penghasil anggur terbaik di dunia, dipadu dengan makanan.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Pelayanan Premium</h3>
+                    <p>Staf profesional yang terlatih memberikan pelayanan personal dan perhatian pada setiap detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Menu Spesial</h2>
+                <p>Jelajahi kreasi kuliner terbaik kami yang dibuat dengan passion dan keahlian</p>
+            </div>
+            
+            <div class="menu-categories fade-in">
+                <button class="category-btn active" data-category="all">Semua Menu</button>
+                <button class="category-btn" data-category="appetizer">Hidangan Pembuka</button>
+                <button class="category-btn" data-category="main">Hidangan Utama</button>
+                <button class="category-btn" data-category="dessert">Makanan Penutup</button>
+                <button class="category-btn" data-category="drink">Minuman Eksklusif</button>
+            </div>
+            
+            <div class="menu-items" id="menuItems"></div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef-section" id="chefs">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Chef Kami</h2>
+                <p>Bertemu dengan tim chef berbakat yang berada di balik setiap kreasi istimewa</p>
+            </div>
+            
+            <div class="chef-grid">
+                <div class="chef-card fade-in">
+                    <div class="chef-img image-fallback"><div>👨‍🍳 Chef Marco</div></div>
+                    <div class="chef-info">
+                        <h3>Marco Alessandro</h3>
+                        <p class="chef-role">HEAD CHEF & OWNER</p>
+                        <p>Lulusan Le Cordon Bleu Paris dengan pengalaman 20+ tahun di restoran bintang Michelin.</p>
+                    </div>
+                </div>
+                
+                <div class="chef-card fade-in">
+                    <div class="chef-img image-fallback"><div>👩‍🍳 Chef Anna</div></div>
+                    <div class="chef-info">
+                        <h3>Anna Takahashi</h3>
+                        <p class="chef-role">PASTRY CHEF</p>
+                        <p>Spesialis pastry dan dessert dengan sentuhan fusion Jepang-Prancis yang unik.</p>
+                    </div>
+                </div>
+                
+                <div class="chef-card fade-in">
+                    <div class="chef-img image-fallback"><div>👨‍🍳 Chef Roberto</div></div>
+                    <div class="chef-info">
+                        <h3>Roberto Silva</h3>
+                        <p class="chef-role">SOUS CHEF</p>
+                        <p>Ahli dalam teknik modern dan molecular gastronomy dengan fokus pada presentasi visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Galeri Kami</h2>
+                <p>Rasakan atmosfer dan keindahan setiap hidangan melalui galeri kami</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <div class="image-fallback" style="height: 100%; display: flex; align-items: center; justify-content: center;"><div>🍷 Interior Restoran</div></div>
+                    <div class="gallery-overlay"><h4 style="color: white;">Interior Elegan</h4></div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="image-fallback" style="height: 100%; display: flex; align-items: center; justify-content: center;"><div>🥩 Hidangan Spesial</div></div>
+                    <div class="gallery-overlay"><h4 style="color: white;">Hidangan Spesial</h4></div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="image-fallback" style="height: 100%; display: flex; align-items: center; justify-content: center;"><div>🍕 Pizza Gourmet</div></div>
+                    <div class="gallery-overlay"><h4 style="color: white;">Pizza Gourmet</h4></div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="image-fallback" style="height: 100%; display: flex; align-items: center; justify-content: center;"><div>🍰 Dessert Eksklusif</div></div>
+                    <div class="gallery-overlay"><h4 style="color: white;">Dessert Eksklusif</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-container">
+                <div class="reservation-info fade-in">
+                    <h2>Reservasi Meja</h2>
+                    <p>Pesan meja Anda sekarang untuk pengalaman kuliner tak terlupakan. Isi formulir di samping dan kami akan mengonfirmasi reservasi Anda dalam waktu 24 jam.</p>
+                    
+                    <div class="reservation-details">
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Jam Operasional</h4>
+                                <p>Setiap Hari: 18:00 - 23:00<br>Minggu: 12:00 - 23:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Telepon</h4>
+                                <p>(021) 555-7890<br>WhatsApp: 0812-3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Jl. Gourmet No. 123, Jakarta Selatan<br>Parkir valet tersedia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reservation-form fade-in">
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" required placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" required placeholder="Contoh: 081234567890">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required placeholder="nama@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Jumlah Tamu *</label>
+                                <select id="guests" required>
+                                    <option value="">Pilih jumlah tamu</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3-4">3-4 Orang</option>
+                                    <option value="5-6">5-6 Orang</option>
+                                    <option value="7+">7+ Orang (Group)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Tanggal Reservasi *</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Waktu Reservasi *</label>
+                                <select id="time" required>
+                                    <option value="">Pilih waktu</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Kesempatan Khusus</label>
+                            <select id="occasion">
+                                <option value="">Pilih kesempatan (opsional)</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="birthday">Ulang Tahun</option>
+                                <option value="business">Makan Bisnis</option>
+                                <option value="date">Kencan</option>
+                                <option value="family">Keluarga</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan Tambahan</label>
+                            <textarea id="message" placeholder="Permintaan khusus, alergi makanan, atau perayaan khusus..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" id="submitBtn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Kirim Reservasi
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gourmet Haven</h3>
+                    <p>Restoran fine dining dengan sentuhan modern yang menawarkan pengalaman kuliner tak terlupakan dengan bahan-bahan terbaik dan pelayanan premium.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak Kami</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Gourmet No. 123, Jakarta Selatan</a></li>
+                        <li><a href="tel:+62215557890"><i class="fas fa-phone"></i> (021) 555-7890</a></li>
+                        <li><a href="mailto:info@gourmethaven.com"><i class="fas fa-envelope"></i> info@gourmethaven.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Buka setiap hari 18:00 - 23:00</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Tentang Kami</a></li>
+                        <li><a href="#menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="#chefs"><i class="fas fa-chevron-right"></i> Chef Kami</a></li>
+                        <li><a href="#reservation"><i class="fas fa-chevron-right"></i> Reservasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Berlangganan newsletter kami untuk mendapatkan penawaran khusus dan informasi menu terbaru.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit" class="btn" style="width: 100%;"><i class="fas fa-paper-plane"></i> Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Gourmet Haven. Hak Cipta Dilindungi. | Website by <span class="text-primary">Tim Gourmet</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Reservasi berhasil dikirim!</span>
+    </div>
+
+    <!-- Shopping Cart Floating Button -->
+    <div class="cart-floating" id="cartFloating">
+        <button class="cart-btn" id="cartBtn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-modal-content">
+            <div class="payment-modal-header">
+                <h2><i class="fas fa-credit-card"></i> Pembayaran</h2>
+                <button class="payment-close-btn" id="paymentCloseBtn">&times;</button>
+            </div>
+            <div class="payment-modal-body">
+                <div class="payment-steps">
+                    <div class="step active" id="step1">
+                        <h3>1. Ringkasan Pesanan</h3>
+                        <div class="order-summary" id="orderSummary"></div>
+                        <div class="order-total">
+                            <div class="total-row"><span>Subtotal</span><span id="subtotal">Rp 0</span></div>
+                            <div class="total-row"><span>Pajak (10%)</span><span id="tax">Rp 0</span></div>
+                            <div class="total-row total"><span><strong>Total Pembayaran</strong></span><span id="totalAmount"><strong>Rp 0</strong></span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="step" id="step2">
+                        <h3>2. Pilih Metode Pembayaran</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method active" data-method="qris"><i class="fas fa-qrcode"></i><span>QRIS</span></div>
+                            <div class="payment-method" data-method="transfer"><i class="fas fa-university"></i><span>Transfer Bank</span></div>
+                            <div class="payment-method" data-method="cash"><i class="fas fa-money-bill-wave"></i><span>Tunai di Tempat</span></div>
+                            <div class="payment-method" data-method="card"><i class="fas fa-credit-card"></i><span>Kartu Kredit/Debit</span></div>
+                        </div>
+                        
+                        <div class="payment-details" id="qrisDetails">
+                            <div class="qris-placeholder"><i class="fas fa-qrcode"></i><p>Scan QR Code untuk pembayaran</p></div>
+                            <p class="payment-instruction">Scan QR code menggunakan aplikasi e-wallet atau mobile banking yang mendukung QRIS</p>
+                        </div>
+                        
+                        <div class="payment-details" id="transferDetails" style="display: none;">
+                            <div class="bank-accounts">
+                                <div class="bank-account"><div class="bank-info"><i class="fas fa-university"></i><div><h4>BCA</h4><p>1234567890</p><p>Gourmet Haven Restaurant</p></div></div></div>
+                                <div class="bank-account"><div class="bank-info"><i class="fas fa-university"></i><div><h4>Mandiri</h4><p>0987654321</p><p>Gourmet Haven Restaurant</p></div></div></div>
+                            </div>
+                            <p class="payment-instruction">Transfer ke salah satu rekening di atas</p>
+                        </div>
+                        
+                        <div class="payment-details" id="cashDetails" style="display: none;">
+                            <div class="cash-info"><i class="fas fa-money-bill-wave"></i><p>Bayar secara tunai saat Anda datang ke restoran.</p></div>
+                        </div>
+                        
+                        <div class="payment-details" id="cardDetails" style="display: none;">
+                            <form id="cardForm">
+                                <div class="form-group"><label for="cardNumber">Nomor Kartu</label><input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19"></div>
+                                <div class="form-row">
+                                    <div class="form-group"><label for="expiryDate">Masa Berlaku</label><input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5"></div>
+                                    <div class="form-group"><label for="cvv">CVV</label><input type="password" id="cvv" placeholder="123" maxlength="3"></div>
+                                </div>
+                                <div class="form-group"><label for="cardName">Nama di Kartu</label><input type="text" id="cardName" placeholder="Nama Lengkap"></div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="step" id="step3">
+                        <h3>3. Konfirmasi Pembayaran</h3>
+                        <div class="confirmation-message">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Pesanan Anda Telah Diterima!</h4>
+                            <p>Kode pemesanan: <strong id="orderCode">GH-2023-001</strong></p>
+                            <p>Estimasi waktu penyiapan: <strong>30-45 menit</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-modal-footer">
+                <button class="btn btn-secondary" id="prevBtn">Sebelumnya</button>
+                <button class="btn" id="nextBtn">Lanjut</button>
+                <button class="btn" id="payNowBtn" style="display: none;"><i class="fas fa-lock"></i> Bayar Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Menu Data
+        const menuData = [
+            {id:1,name:"Lobster Thermidor",description:"Lobster segar dengan saus krim, keju gruyère, dan rempah-rempah pilihan.",price:450000,category:"main",rating:5,image:"https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:2,name:"Tuna Tartare Avocado",description:"Tuna segar sashimi grade dengan alpukat, wijen hitam, dan saus ponzu citrus.",price:165000,category:"appetizer",rating:4,image:"https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:3,name:"Wagyu Beef Ribeye",description:"Steak daging wagyu A5 level medium rare dengan kentang truffle.",price:650000,category:"main",rating:5,image:"https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:4,name:"Tiramisu Classico",description:"Tiramisu klasik dengan mascarpone buatan sendiri, kopi espresso arabica.",price:95000,category:"dessert",rating:4,image:"https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:5,name:"Truffle Mushroom Risotto",description:"Risotto al dente dengan jamur truffle hitam, keju parmesan reggiano.",price:250000,category:"main",rating:4,image:"https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=685&q=80"},
+            {id:6,name:"Pan-Seared Foie Gras",description:"Foie gras panggang dengan roti brioche, chutney buah ara.",price:225000,category:"appetizer",rating:5,image:"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:7,name:"Chocolate Lava Cake",description:"Kue cokelat dengan lelehan cokelat Valrhona 70% di dalamnya.",price:85000,category:"dessert",rating:5,image:"https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?ixlib=rb-4.0.3&auto=format&fit=crop&w=686&q=80"},
+            {id:8,name:"Signature Garden Cocktail",description:"Koktail spesial dengan gin botanicals, elderflower, lemon verbena.",price:145000,category:"drink",rating:4,image:"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
+            {id:9,name:"Seafood Platter",description:"Beragam seafood segar termasuk kerang, udang, scallop, dan cumi.",price:380000,category:"main",rating:4,image:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"},
+            {id:10,name:"Burrata Caprese",description:"Burrata Italia segar dengan tomat heirloom, basil pesto.",price:135000,category:"appetizer",rating:5,image:"https://images.unsplash.com/photo-1598214886806-c87b84b7078b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1450&q=80"}
+        ];
+
+        let shoppingCart = JSON.parse(localStorage.getItem('gourmetCart')) || [];
+        let currentStep = 1, selectedPaymentMethod = 'qris';
+
+        const menuItemsContainer=document.getElementById('menuItems'),categoryButtons=document.querySelectorAll('.category-btn'),mobileMenuBtn=document.getElementById('mobileMenuBtn'),navLinks=document.getElementById('navLinks'),header=document.getElementById('header'),reservationForm=document.getElementById('reservationForm'),newsletterForm=document.getElementById('newsletterForm'),backToTop=document.getElementById('backToTop'),toast=document.getElementById('toast'),toastMessage=document.getElementById('toastMessage'),fadeElements=document.querySelectorAll('.fade-in'),submitBtn=document.getElementById('submitBtn'),navLinksAll=document.querySelectorAll('.nav-links a');
+
+        const cartFloating=document.getElementById('cartFloating'),cartBtn=document.getElementById('cartBtn'),cartCount=document.getElementById('cartCount'),paymentModal=document.getElementById('paymentModal'),paymentCloseBtn=document.getElementById('paymentCloseBtn'),orderSummary=document.getElementById('orderSummary'),subtotalElement=document.getElementById('subtotal'),taxElement=document.getElementById('tax'),totalAmountElement=document.getElementById('totalAmount'),paymentMethods=document.querySelectorAll('.payment-method'),paymentDetails=document.querySelectorAll('.payment-details'),prevBtn=document.getElementById('prevBtn'),nextBtn=document.getElementById('nextBtn'),payNowBtn=document.getElementById('payNowBtn'),steps=document.querySelectorAll('.step'),cardForm=document.getElementById('cardForm'),orderCode=document.getElementById('orderCode');
+
+        function renderMenuItems(c='all'){menuItemsContainer.innerHTML='';const f=c==='all'?menuData:menuData.filter(i=>i.category===c);f.forEach(i=>{const m=document.createElement('div');m.className='menu-item fade-in';m.setAttribute('data-category',i.category);let s='';for(let j=1;j<=5;j++){s+=(j<=i.rating?'<i class="fas fa-star"></i>':'<i class="far fa-star"></i>');}m.innerHTML=`<img src="${i.image}" alt="${i.name}" class="menu-item-img" loading="lazy" onerror="this.onerror=null; this.classList.add('image-fallback'); this.parentElement.innerHTML='<div style=\\"height:220px; display:flex; align-items:center; justify-content:center; background:linear-gradient(45deg,#f8f8f8,#e8e8e8); color:#666; font-weight:500;\\">${i.name}</div>';"><div class="menu-item-content"><div class="menu-item-header"><h3 class="menu-item-name">${i.name}</h3><span class="menu-item-price">Rp ${i.price.toLocaleString('id-ID')}</span></div><span class="menu-item-category">${getCategoryName(i.category)}</span><p class="menu-item-desc">${i.description}</p><div class="menu-item-footer"><div class="rating">${s}</div><button class="btn" data-id="${i.id}" style="padding: 0.5rem 1rem; font-size: 0.9rem;"><i class="fas fa-shopping-cart"></i> Pesan</button></div></div>`;menuItemsContainer.appendChild(m);});setTimeout(()=>{document.querySelectorAll('.menu-item-footer .btn').forEach(b=>{b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();addToCart(this.getAttribute('data-id'));});});},100);observeFadeElements();}
+
+        function getCategoryName(c){const cat={'appetizer':'Hidangan Pembuka','main':'Hidangan Utama','dessert':'Makanan Penutup','drink':'Minuman'};return cat[c]||c;}
+
+        categoryButtons.forEach(b=>{b.addEventListener('click',()=>{categoryButtons.forEach(btn=>btn.classList.remove('active'));b.classList.add('active');renderMenuItems(b.getAttribute('data-category'));});});
+
+        mobileMenuBtn.addEventListener('click',()=>{navLinks.classList.toggle('active');mobileMenuBtn.innerHTML=navLinks.classList.contains('active')?'<i class="fas fa-times"></i>':'<i class="fas fa-bars"></i>';document.body.style.overflow=navLinks.classList.contains('active')?'hidden':'';});
+
+        navLinksAll.forEach(l=>{l.addEventListener('click',()=>{navLinks.classList.remove('active');mobileMenuBtn.innerHTML='<i class="fas fa-bars"></i>';document.body.style.overflow='';navLinksAll.forEach(a=>a.classList.remove('active'));l.classList.add('active');});});
+
+        window.addEventListener('scroll',()=>{if(window.scrollY>50){header.classList.add('scrolled');}else{header.classList.remove('scrolled');}if(window.scrollY>500){backToTop.classList.add('visible');}else{backToTop.classList.remove('visible');}updateActiveNavLink();});
+
+        function updateActiveNavLink(){const s=document.querySelectorAll('section');const p=window.scrollY+100;s.forEach(sec=>{const t=sec.offsetTop;const h=sec.clientHeight;const id=sec.getAttribute('id');if(p>=t&&p<t+h){navLinksAll.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')===`#${id}`){l.classList.add('active');}})}});};
+
+        reservationForm.addEventListener('submit',async(e)=>{e.preventDefault();const n=document.getElementById('name').value.trim();const ph=document.getElementById('phone').value.trim();const em=document.getElementById('email').value.trim();const g=document.getElementById('guests').value;const d=document.getElementById('date').value;const t=document.getElementById('time').value;if(!n||!ph||!em||!g||!d||!t){showToast('Harap isi semua field!','error');return;}const er=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;if(!er.test(em)){showToast('Email tidak valid!','error');return;}const pr=/^[0-9+\-\s]{10,15}$/;if(!pr.test(ph)){showToast('Nomor telepon tidak valid!','error');return;}const sd=new Date(d);const today=new Date();today.setHours(0,0,0,0);if(sd<today){showToast('Tanggal tidak boleh di masa lalu!','error');return;}submitBtn.innerHTML='<div class="loading"></div> Memproses...';submitBtn.disabled=true;await new Promise(r=>setTimeout(r,1500));const fd=new Date(d).toLocaleDateString('id-ID',{weekday:'long',year:'numeric',month:'long',day:'numeric'});showToast(`Terima kasih ${n}! Reservasi Anda untuk ${g} orang pada ${fd} pukul ${t} telah diterima.`);reservationForm.reset();submitBtn.innerHTML='<i class="fas fa-paper-plane"></i> Kirim Reservasi';submitBtn.disabled=false;const ld=new Date().toISOString().split('T')[0];document.getElementById('date').min=ld;});
+
+        newsletterForm.addEventListener('submit',async(e)=>{e.preventDefault();const ei=newsletterForm.querySelector('input[type="email"]');const em=ei.value.trim();if(!em){showToast('Harap masukkan email!','error');return;}const er=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;if(!er.test(em)){showToast('Email tidak valid!','error');return;}await new Promise(r=>setTimeout(r,1000));showToast('Terima kasih berlangganan!');newsletterForm.reset();});
+
+        function showToast(m,t='success'){toastMessage.textContent=m;toast.className='toast';toast.classList.add(t==='error'?'error':'success');setTimeout(()=>{toast.classList.add('show');},10);setTimeout(()=>{toast.classList.remove('show');},4000);}
+
+        function observeFadeElements(){const o=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');}});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});fadeElements.forEach(el=>{o.observe(el);});document.querySelectorAll('.menu-item.fade-in').forEach(it=>{o.observe(it);});}
+
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const tid=this.getAttribute('href');if(tid==='#')return;const te=document.querySelector(tid);if(te){e.preventDefault();window.scrollTo({top:te.offsetTop-80,behavior:'smooth'});}});});
+
+        backToTop.addEventListener('click',(e)=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+
+        // Shopping Cart Functions
+        function updateCartCount(){const t=shoppingCart.reduce((s,i)=>s+i.quantity,0);cartCount.textContent=t;cartFloating.style.display=t>0?'block':'none';}
+        function addToCart(i){const it=menuData.find(m=>m.id==i);if(!it)return;const ex=shoppingCart.find(m=>m.id==i);if(ex){ex.quantity+=1;}else{shoppingCart.push({id:it.id,name:it.name,price:it.price,quantity:1,image:it.image});}saveCart();updateCartCount();showToast(`"${it.name}" ditambahkan ke keranjang!`);}
+        function removeFromCart(i){shoppingCart=shoppingCart.filter(it=>it.id!=i);saveCart();updateCartCount();renderOrderSummary();}
+        function updateQuantity(i,c){const it=shoppingCart.find(m=>m.id==i);if(!it)return;it.quantity+=c;if(it.quantity<1){removeFromCart(i);}else{saveCart();renderOrderSummary();}}
+        function saveCart(){localStorage.setItem('gourmetCart',JSON.stringify(shoppingCart));}
+        function calculateTotal(){const sub=shoppingCart.reduce((s,i)=>s+(i.price*i.quantity),0);const tx=sub*0.1;return{subtotal:sub,tax:tx,total:sub+tx};}
+        function renderOrderSummary(){if(shoppingCart.length===0){orderSummary.innerHTML='<div style="text-align: center; padding: 2rem; color: var(--gray-color);"><i class="fas fa-shopping-cart" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i><p>Keranjang kosong</p></div>';subtotalElement.textContent='Rp 0';taxElement.textContent='Rp 0';totalAmountElement.innerHTML='<strong>Rp 0</strong>';return;}const{subtotal,tax,total}=calculateTotal();orderSummary.innerHTML=shoppingCart.map(i=>`<div class="order-item"><div class="order-item-info"><div class="order-item-name">${i.name}</div><div class="order-item-price">Rp ${i.price.toLocaleString('id-ID')}</div><div class="order-item-quantity"><button class="quantity-btn" onclick="updateQuantity(${i.id}, -1)">-</button><span>${i.quantity}</span><button class="quantity-btn" onclick="updateQuantity(${i.id}, 1)">+</button></div></div><div class="order-item-total">Rp ${(i.price*i.quantity).toLocaleString('id-ID')}</div><button class="remove-item" onclick="removeFromCart(${i.id})"><i class="fas fa-trash"></i></button></div>`).join('');subtotalElement.textContent=`Rp ${subtotal.toLocaleString('id-ID')}`;taxElement.textContent=`Rp ${tax.toLocaleString('id-ID')}`;totalAmountElement.innerHTML=`<strong>Rp ${total.toLocaleString('id-ID')}</strong>`;}
+        function generateOrderCode(){const date=new Date();const year=date.getFullYear();const month=String(date.getMonth()+1).padStart(2,'0');const day=String(date.getDate()).padStart(2,'0');const rand=Math.floor(Math.random()*1000);return`GH-${year}${month}${day}-${String(rand).padStart(3,'0')}`;}
+        function showStep(n){steps.forEach(s=>s.classList.remove('active'));document.getElementById(`step${n}`).classList.add('active');currentStep=n;prevBtn.style.display=n===1?'none':'inline-flex';if(n===3){nextBtn.style.display='none';payNowBtn.style.display='none';}else if(n===2){nextBtn.style.display='none';payNowBtn.style.display='inline-flex';}else{nextBtn.style.display='inline-flex';payNowBtn.style.display='none';}}
+        function validateCardForm(){const cn=document.getElementById('cardNumber').value.replace(/\s/g,'');const ex=document.getElementById('expiryDate').value;const cv=document.getElementById('cvv').value;const cnm=document.getElementById('cardName').value.trim();if(!cn||cn.length<16){showToast('Kartu tidak valid','error');return false;}if(!ex.match(/^\d{2}\/\d{2}$/)){showToast('Format salah (MM/YY)','error');return false;}if(!cv||cv.length!==3){showToast('CVV harus 3 digit','error');return false;}if(!cnm){showToast('Nama harus diisi','error');return false;}return true;}
+        function processPayment(){if(shoppingCart.length===0){showToast('Keranjang kosong','error');return;}if(selectedPaymentMethod==='card'&&!validateCardForm())return;const oc=generateOrderCode();orderCode.textContent=oc;showToast('Memproses...');setTimeout(()=>{showStep(3);const o={code:oc,items:shoppingCart,total:calculateTotal().total,paymentMethod:selectedPaymentMethod,date:new Date().toISOString(),status:'completed'};const ord=JSON.parse(localStorage.getItem('gourmetOrders'))||[];ord.push(o);localStorage.setItem('gourmetOrders',JSON.stringify(ord));shoppingCart=[];saveCart();updateCartCount();showToast('Pembayaran berhasil!','success');},2000);}
+        function initPaymentSystem(){updateCartCount();cartBtn.addEventListener('click',()=>{if(shoppingCart.length===0){showToast('Keranjang kosong','error');return;}renderOrderSummary();showStep(1);paymentModal.style.display='flex';document.body.style.overflow='hidden';});paymentCloseBtn.addEventListener('click',()=>{paymentModal.style.display='none';document.body.style.overflow='';});paymentModal.addEventListener('click',(e)=>{if(e.target===paymentModal){paymentModal.style.display='none';document.body.style.overflow='';}});paymentMethods.forEach(m=>{m.addEventListener('click',()=>{paymentMethods.forEach(pm=>pm.classList.remove('active'));m.classList.add('active');selectedPaymentMethod=m.getAttribute('data-method');paymentDetails.forEach(pd=>pd.style.display='none');document.getElementById(`${selectedPaymentMethod}Details`).style.display='block';});});prevBtn.addEventListener('click',()=>{if(currentStep>1)showStep(currentStep-1);});nextBtn.addEventListener('click',()=>{if(currentStep<3)showStep(currentStep+1);});payNowBtn.addEventListener('click',processPayment);const cni=document.getElementById('cardNumber');if(cni){cni.addEventListener('input',function(e){let v=e.target.value.replace(/\s/g,'').replace(/\D/g,'');let fv='';for(let i=0;i<v.length;i++){if(i>0&&i%4===0)fv+=' ';fv+=v[i];}e.target.value=fv.substring(0,19);});}const edi=document.getElementById('expiryDate');if(edi){edi.addEventListener('input',function(e){let v=e.target.value.replace(/\D/g,'');if(v.length>=2)v=v.substring(0,2)+'/'+v.substring(2,4);e.target.value=v.substring(0,5);});}const cvi=document.getElementById('cvv');if(cvi){cvi.addEventListener('input',function(e){e.target.value=e.target.value.replace(/\D/g,'').substring(0,3);});}}
+
+        document.addEventListener('DOMContentLoaded',()=>{renderMenuItems();observeFadeElements();if(window.scrollY>50)header.classList.add('scrolled');const ld=new Date().toISOString().split('T')[0];document.getElementById('date').min=ld;const tm=new Date();tm.setDate(tm.getDate()+1);document.getElementById('date').valueAsDate=tm;updateActiveNavLink();initPaymentSystem();});
+
+        window.addEventListener('error',function(e){if(e.target.tagName==='IMG'){e.target.style.display='none';const fb=document.createElement('div');fb.className='image-fallback';fb.innerHTML='<div>🍽️ Gambar Tidak Tersedia</div>';e.target.parentNode.insertBefore(fb,e.target);e.target.remove();}},true);
+
+        window.addToCart=addToCart;window.removeFromCart=removeFromCart;window.updateQuantity=updateQuantity;
+    </script>
+</body>
+</html>
