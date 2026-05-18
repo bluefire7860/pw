@@ -554,9 +554,8 @@ header.scrolled {
 
 .chef-img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 300px;
     object-fit: cover;
-    display: block;
 }
 
 .chef-info {
