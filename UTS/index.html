@@ -469,17 +469,142 @@
     <script>
         // Menu Data
         const menuData = [
-            {id:1,name:"Lobster Thermidor",description:"Lobster segar dengan saus krim, keju gruyère, dan rempah-rempah pilihan.",price:450000,category:"main",rating:5,image:"https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:2,name:"Tuna Tartare Avocado",description:"Tuna segar sashimi grade dengan alpukat, wijen hitam, dan saus ponzu citrus.",price:165000,category:"appetizer",rating:4,image:"https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:3,name:"Wagyu Beef Ribeye",description:"Steak daging wagyu A5 level medium rare dengan kentang truffle.",price:650000,category:"main",rating:5,image:"https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:4,name:"Tiramisu Classico",description:"Tiramisu klasik dengan mascarpone buatan sendiri, kopi espresso arabica.",price:95000,category:"dessert",rating:4,image:"https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:5,name:"Truffle Mushroom Risotto",description:"Risotto al dente dengan jamur truffle hitam, keju parmesan reggiano.",price:250000,category:"main",rating:4,image:"https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=685&q=80"},
-            {id:6,name:"Pan-Seared Foie Gras",description:"Foie gras panggang dengan roti brioche, chutney buah ara.",price:225000,category:"appetizer",rating:5,image:"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:7,name:"Chocolate Lava Cake",description:"Kue cokelat dengan lelehan cokelat Valrhona 70% di dalamnya.",price:85000,category:"dessert",rating:5,image:"https://images.unsplash.com/photo-1624353365286-3f8d62dadadf?ixlib=rb-4.0.3&auto=format&fit=crop&w=686&q=80"},
-            {id:8,name:"Signature Garden Cocktail",description:"Koktail spesial dengan gin botanicals, elderflower, lemon verbena.",price:145000,category:"drink",rating:4,image:"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80"},
-            {id:9,name:"Seafood Platter",description:"Beragam seafood segar termasuk kerang, udang, scallop, dan cumi.",price:380000,category:"main",rating:4,image:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"},
-            {id:10,name:"Burrata Caprese",description:"Burrata Italia segar dengan tomat heirloom, basil pesto.",price:135000,category:"appetizer",rating:5,image:"https://images.unsplash.com/photo-1598214886806-c87b84b7078b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1450&q=80"}
-        ];
+    {
+        id: 1,
+        name: "Ketoprak Gokil",
+        description: "Ketoprak khas Jakarta dengan lontong, bihun, tahu goreng, dan saus kacang super creamy yang bikin nagih.",
+        price: 28000,
+        category: "appetizer",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 2,
+        name: "Potato Fries",
+        description: "Kentang goreng renyah dengan taburan bumbu spesial dan saus pilihan yang cocok untuk camilan santai.",
+        price: 25000,
+        category: "appetizer",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 3,
+        name: "Blue Pancakes",
+        description: "Pancake biru lembut dengan topping sirup manis dan butter creamy yang unik dan menarik.",
+        price: 32000,
+        category: "appetizer",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 4,
+        name: "Roti Bakar Keju",
+        description: "Roti bakar hangat dengan lelehan keju melimpah dan aroma butter yang menggoda.",
+        price: 22000,
+        category: "appetizer",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 5,
+        name: "Pizza Mini",
+        description: "Pizza bagel mini dengan topping sosis, keju mozzarella, dan saus tomat spesial.",
+        price: 35000,
+        category: "appetizer",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 6,
+        name: "Ice Cream Sundae",
+        description: "Es krim lembut dengan saus cokelat, taburan sprinkle warna-warni, dan ceri segar.",
+        price: 26000,
+        category: "dessert",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 7,
+        name: "Chocolate Cookies",
+        description: "Cookies cokelat premium dengan tekstur crunchy di luar dan lembut di dalam.",
+        price: 24000,
+        category: "dessert",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 8,
+        name: "Fish N Chips",
+        description: "Ikan goreng crispy dengan kentang renyah dan saus tartar creamy khas restoran premium.",
+        price: 48000,
+        category: "main",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 9,
+        name: "Nasi Goreng Special Berlian",
+        description: "Nasi goreng spesial dengan telur, ayam, sosis, dan topping premium bercita rasa khas Nusantara.",
+        price: 42000,
+        category: "main",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 10,
+        name: "Mie Goreng Indomie",
+        description: "Indomie goreng dengan topping melimpah seperti telur, sosis, bakso, ayam, dan sayuran segar.",
+        price: 38000,
+        category: "main",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 11,
+        name: "Burger Bongsor",
+        description: "Burger ukuran jumbo dengan daging tebal, keju leleh, sayuran segar, dan saus spesial.",
+        price: 55000,
+        category: "main",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 12,
+        name: "Es Teh Pahit",
+        description: "Teh hitam dingin dengan rasa autentik dan aroma teh yang kuat tanpa gula tambahan.",
+        price: 10000,
+        category: "drink",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 13,
+        name: "Es Teh Segar",
+        description: "Teh manis dingin dipadukan dengan buah leci segar yang menyegarkan tenggorokan.",
+        price: 15000,
+        category: "drink",
+        rating: 5,
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 14,
+        name: "Kopi Putih",
+        description: "White coffee creamy dengan aroma khas kopi pilihan yang cocok dinikmati kapan saja.",
+        price: 18000,
+        category: "drink",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: 15,
+        name: "Akua",
+        description: "Air putih dingin yang segar untuk menemani seluruh hidangan favorit Anda.",
+        price: 8000,
+        category: "drink",
+        rating: 4,
+        image: "https://images.unsplash.com/photo-1564419320461-6870880221ad?auto=format&fit=crop&w=800&q=80"
+    }
+];
 
         let shoppingCart = JSON.parse(localStorage.getItem('gourmetCart')) || [];
         let currentStep = 1, selectedPaymentMethod = 'qris';
