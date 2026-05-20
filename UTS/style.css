@@ -1424,6 +1424,21 @@ footer {
     .payment-modal-footer .btn {
         width: 100%;
     }
+
+    .toast {
+        bottom: 1rem;
+        left: 50%;
+        width: auto;
+        max-width: calc(100% - 2rem);
+        transform: translateX(-50%) translateY(150%);
+        pointer-events: none;
+        z-index: 1000;
+    }
+
+    .toast.show {
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+    }
 }
 
 @media (max-width: 480px) {
